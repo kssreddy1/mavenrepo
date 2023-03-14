@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('QA') {
+      steps {
+        sh '/usr/share/maven/bin/mvn sonar:sonar'
+      }
+    }
+
   }
 }
