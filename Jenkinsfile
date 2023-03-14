@@ -19,11 +19,5 @@ pipeline {
       }
     }
 
-    stage('ARTIFACTS') {
-      steps {
-        sh '/usr/share/maven/bin/mvn deploy'
-      }
-    }
-
   }
 }
